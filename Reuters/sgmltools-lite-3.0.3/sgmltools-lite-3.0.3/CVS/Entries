@@ -1,0 +1,22 @@
+/.cvsignore/1.1/Fri Mar 24 09:14:37 2000//
+/COPYING/1.1/Fri Mar 24 09:19:00 2000//
+/Makefile.in/1.13/Tue Apr 24 18:37:22 2001//
+/README/1.1/Fri Mar 24 09:14:37 2000//
+/aliases/1.4/Wed Oct 25 06:00:05 2000//
+/catalog.rh62/1.1/Fri Jun 30 12:06:52 2000//
+/catalog.suse/1.1/Fri Jun 30 12:06:52 2000//
+/configure/1.7/Wed Oct 25 06:00:05 2000//
+/configure.in/1.7/Wed Oct 25 06:00:05 2000//
+/index.html/1.1/Fri Mar 24 09:14:37 2000//
+/install.sh/1.1/Fri Mar 24 09:14:37 2000//
+D/bin////
+D/doc////
+D/dsssl////
+D/dtd////
+D/man////
+D/python////
+D/rpm////
+/ChangeLog/1.9/Mon May 21 22:47:57 2001//
+/README.rpm/1.3/Mon May 21 22:47:57 2001//
+/catalog.rh71/1.1/Fri May  4 04:27:17 2001//
+/POSTINSTALL/1.4/Tue Jun  5 05:41:42 2001//
