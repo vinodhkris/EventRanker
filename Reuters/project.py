@@ -164,7 +164,7 @@ def similarity(featureVector,maxTimeDiff,doctext,doc1,doc2):
 
 print 'Getting the similarity values between different articles'
 startTime = time.time()
-docssimilarity = np.zeros(shape=(len(docs),len(docs)))  
+docssimilarity = np.ones(shape=(len(docs),len(docs)))  
 mindoc = min(docs)
 maxTimeDiff = maxdate - mindate
 for docid1 in docs:
