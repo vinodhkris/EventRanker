@@ -70,6 +70,7 @@ docLocation = {}
 
 datePattern = re.compile("<date>(.*)</date>")
 placesPattern = re.compile("<places><d>(.*)</d>*</places>")
+titlePattern = re.compile("<title>(.*)(\\n)*</title>")
 places = []
 mindate = 0
 maxdate = 0
@@ -86,6 +87,11 @@ for doc in docs:
 	for word in soup.findAll("reuters",{"newid":str(doc)}):
 		doctext[doc]["text"] = word.findAll("text")
 		date = word.findAll("date")
+		title = str(word.findAll("title"))
+		if titlePattern.search(title) != None:
+			doctext[doc]["title"] = titlePattern.search(title).groups()[0]
+		else:
+			doctext[doc]["title"] = title
 		date = datePattern.search(str(date)).groups()[0]
 		doctime = date.split(' ')[1]
 		date = date.split(' ')[0]
@@ -175,9 +181,10 @@ for docid1 in docs:
 		print docid1,docid2,docssimilarity[docid1-mindoc][docid2-mindoc]
 
 writePickle(docssimilarity,'docSimilarityPickle.txt')
+writePickle(doctext,'docTextPickle.txt')
 
 print docssimilarity
 
 print 'Time elapsed',time.time()-startTime
 
-#Kmeans with similarity
+#agglomerative clustering with similarity
