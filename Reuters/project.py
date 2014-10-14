@@ -15,6 +15,7 @@ from sklearn.metrics import pairwise_distances
 from scipy.spatial.distance import cosine
 import time
 import pickle
+import test
 
 def writePickle(struct, filename):
 	file1 = open(filename,"wb") 			
@@ -47,7 +48,7 @@ def monthtonum(month):
 
 	elif month.lower() == "dec":
 		return 12
-
+'''
 topics = open('Topics.txt','r')
 
 inputTopic = 9
@@ -89,7 +90,7 @@ for doc in docs:
 		date = word.findAll("date")
 		title = str(word.findAll("title"))
 		if titlePattern.search(title) != None:
-			doctext[doc]["title"] = titlePattern.search(title).groups()[0]
+			doctext[doc][l"title"] = titlePattern.search(title).groups()[0]
 		else:
 			doctext[doc]["title"] = title
 		date = datePattern.search(str(date)).groups()[0]
@@ -122,16 +123,16 @@ for doc in docs:
 
 
 print maxdate,mindate
-
+'''
 #Part for extracting word tfidf vector for article
 
-print 'Extracting tfidf vector for an article'
+print 'Extracting word count vector for an article'
+csvfile = test.unpickle('stockmarketarticleContent_wc.csv')
 featureVector = np.zeros(shape=(max(docs)+1,18912))  					#Word vector, also added space for location and time and Person (if any)
-csvfile = open('coffee_wc.csv','r')
-read = csv.reader(csvfile, delimiter = ',')
 for row in read:
 	if int(row[0]) in docs:
 		featureVector[int(row[0]),int(row[1])] += int(row[2]) 
+
 '''
 csvfile = open('coffee_tfidf.csv','r')
 read = csv.reader(csvfile, delimiter = ',')
@@ -181,7 +182,7 @@ for docid1 in docs:
 		print docid1,docid2,docssimilarity[docid1-mindoc][docid2-mindoc]
 
 writePickle(docssimilarity,'docSimilarityPickle.txt')
-writePickle(doctext,'docTextPickle.txt')
+writePickle(doctext,'stockMarketCrashDocTextPickle.txt')
 
 print docssimilarity
 
