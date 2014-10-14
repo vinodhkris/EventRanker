@@ -7,4 +7,7 @@ else:
 	sys.exit(0)
 
 for i in xrange(len(smDict)):
-	print i,smDict[i]["web_url"],smDict[i]["headline"]
+	try:
+		print i,smDict[i]["web_url"],smDict[i]["headline"]
+	except:
+		continue
