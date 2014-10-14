@@ -1,6 +1,7 @@
 import cookielib
 import urllib2
 from bs4 import BeautifulSoup
+import pickle
 '''
 response = urllib2.urlopen('http://python.org/')
 html = response.read()
@@ -18,3 +19,8 @@ def getData(url):
 		html = response.read()
 
 	return html
+
+def unpickle(filename):
+	f = open(filename,"rb") 
+	heroes = pickle.load(f)
+	return heroes
