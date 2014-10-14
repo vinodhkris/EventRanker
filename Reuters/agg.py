@@ -4,7 +4,7 @@ import operator
 import numpy as np
 import pickle
 import random
-
+'''
 topics = open('Topics.txt','r')
 
 inputTopic = 9
@@ -19,8 +19,10 @@ for doc in listOfDocs:
 	docs.append(int(doc))
 
 mindoc = min(docs)
-
+'''
+K = 10
 docssimilarity = pickle.load(open('docSimilarityPickle.txt', 'rb'))
+articleContent = pickle.load(open('stockmarketarticleContent.txt','rb'))
 numdocs = docssimilarity.shape[0]
 
 clusters = {}
@@ -34,8 +36,6 @@ def clusterSim(c1,c2):
 	for i in c1:
 		for j in c2:
 			similarities.append(docssimilarity[i][j])
-	print c1,c2,similarities
-	raw_input()
 	return sum(similarities)/len(similarities)
 
 def merge(cTuple):
@@ -44,7 +44,7 @@ def merge(cTuple):
 		clusters[cTuple[0]].append(j)
 	del clusters[cTuple[1]]
 
-while len(clusters)>3: 								#Stopping criterion
+while len(clusters)>K: 								#Stopping criterion
 	clusterDistance = defaultdict(float) 			#To store cluster distances
 	for i in clusters:
 		for j in clusters:
@@ -57,3 +57,8 @@ while len(clusters)>3: 								#Stopping criterion
 
 print clusters
 
+for i in clusters:
+	for j in xrange(len(clusters[i])):
+		print i,clusters[i][j],articleContent[clusters[i][j]]['headline'],'\n'
+		print articleContent[clusters[i][j]]['text'],'\n'
+		raw_input()

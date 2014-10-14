@@ -8,6 +8,6 @@ else:
 
 for i in xrange(len(smDict)):
 	try:
-		print i,smDict[i]["web_url"],smDict[i]["headline"]
+		print i,smDict[i]["web_url"],smDict[i]["headline"],smDict[i]["pub_date"]
 	except:
 		continue
