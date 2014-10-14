@@ -1,0 +1,50 @@
+0 http://www.nytimes.com/2012/12/26/opinion/bahrain-a-brutal-ally.html Bahrain, a Brutal Ally 2012-12-26T00:00:00Z
+1 http://www.nytimes.com/2012/12/28/world/middleeast/irans-slowing-of-enrichment-efforts-may-show-it-wants-deal.html 2 http://www.nytimes.com/2012/12/30/world/asia/drone-war-in-pakistan-spurs-militants-to-deadly-reprisals.html Drone War Spurs Militants to Deadly Reprisals 2012-12-30T00:00:00Z
+3 http://www.nytimes.com/2012/12/16/world/africa/abdessalam-yassine-leader-of-moroccan-opposition-movement-dies-at-84.html Abdessalam Yassine, Leader of Moroccan Opposition Movement, Dies at 84 2012-12-16T00:00:00Z
+4 http://www.nytimes.com/2012/12/23/business/adbusters-war-against-too-much-of-everything.html The War Against Too Much of Everything 2012-12-23T00:00:00Z
+5 http://www.nytimes.com/2012/12/08/us/in-private-bradley-manning-case-jailers-become-the-accused.html In WikiLeaks Case, Defense Puts the Jailers on Trial 2012-12-08T00:00:00Z
+6 http://www.nytimes.com/2012/11/26/business/media/using-war-as-cover-to-target-journalists.html Using War as Cover to Target Journalists 2012-11-26T00:00:00Z
+7 http://www.nytimes.com/2012/11/23/books/books-for-art-lovers.html Between Two Covers, Wide Worlds of Art 2012-11-23T00:00:00Z
+8 http://www.nytimes.com/2012/11/19/world/asia/obama-heads-to-myanmar-as-it-promises-more-reforms.html Obama, in an Emerging Myanmar, Vows Support 2012-11-19T00:00:00Z
+9 http://www.nytimes.com/2012/11/08/world/middleeast/womens-rights-at-a-standstill-in-jordan.html Women's Rights at a Standstill in Jordan 2012-11-08T00:00:00Z
+10 http://www.nytimes.com/2012/10/22/us/politics/benghazi-and-arab-spring-rear-up-in-us-campaign.html Benghazi and Arab Spring Rear Up in U.S. Campaign 2012-10-22T00:00:00Z
+11 http://www.nytimes.com/2012/11/01/world/middleeast/island-havens-for-investment-citizenship.html Island Havens for Investment Citizenship 2012-11-01T00:00:00Z
+12 http://www.nytimes.com/2012/11/02/opinion/US-consulate-attack-in-benghazi-was-not-an-act-of-terror.html Militant or Terrorist? 2012-11-02T00:00:00Z
+13 http://www.nytimes.com/2012/10/22/us/politics/explanation-for-benghazi-attack-under-scrutiny.html After Benghazi Attack, Talk Lagged Behind Intelligence 2012-10-22T00:00:00Z
+14 http://www.nytimes.com/2012/10/24/world/middleeast/pledging-400-million-qatari-emir-makes-historic-visit-to-gaza-strip.html 15 http://www.nytimes.com/2012/10/21/world/middleeast/twitter-gives-saudi-arabia-a-revolution-of-its-own.html Twitter Gives Saudi Arabia a Revolution of Its Own 2012-10-21T00:00:00Z
+16 http://www.nytimes.com/2012/10/21/us/church-appeal-on-israel-angers-jewish-groups.html Church Appeal on Israel Angers Jewish Groups 2012-10-21T00:00:00Z
+17 http://www.nytimes.com/2012/09/25/us/politics/arab-spring-proves-a-harsh-test-for-obamas-diplomatic-skill.html In Arab Spring, Obama Finds a Sharp Test 2012-09-25T00:00:00Z
+18 http://www.nytimes.com/2012/10/01/opinion/keller-the-burmese-odd-couple.html The Burmese Odd Couple 2012-10-01T00:00:00Z
+19 http://www.nytimes.com/2012/09/22/opinion/roger-cohen-a-21st-century-islam.html A 21st-Century Islam 2012-09-22T00:00:00Z
+20 http://www.nytimes.com/2012/09/17/world/middleeast/muslims-rage-over-film-fueled-by-culture-divide.html Cultural Clash Fuels Muslims Angry at Online Video 2012-09-17T00:00:00Z
+21 http://www.nytimes.com/2012/09/06/world/middleeast/06iht-m06-syria-leftists.html Syria Turmoil Exposes Rifts Among Arab Intellectuals 2012-09-06T20:55:00Z
+22 http://www.nytimes.com/2012/09/06/world/middleeast/saudi-arabia-signals-openness-to-women-seeking-work.html Saudi Arabia Signals Openness to Women Seeking Work 2012-09-05T00:00:00Z
+23 http://www.nytimes.com/2012/09/14/world/middleeast/mideast-turmoil-spreads-to-us-embassy-in-yemen.html Turmoil Over Contentious Video Spreads 2012-09-14T00:00:00Z
+24 http://www.nytimes.com/2012/09/06/opinion/kristof-obamas-first-term-report-card.html Obama's First-Term Report Card 2012-09-05T00:00:00Z
+25 http://www.nytimes.com/2012/09/02/world/africa/angola-ruling-party-near-election-win.html Angola&#8217;s Governing Party and Its President Are Poised to Win Election 2012-09-02T00:00:00Z
+26 http://www.nytimes.com/2012/08/27/world/middleeast/egyptian-president-seeks-regional-initiative-for-syria-peace.html Egyptian Leader Adds Rivals of West to Syria Plan 2012-08-27T00:00:00Z
+27 http://www.nytimes.com/2012/09/02/world/africa/angola-ruling-party-near-election-win.html Angola's Governing Party and Its President Are Poised to Win Election 2012-09-01T00:00:00Z
+28 http://www.nytimes.com/2012/08/20/arts/television/arab-tv-nagi-atallahs-gang-tartil-night-owl.html Veiled Anchors, Koranic Contests and Racy Romance 2012-08-20T00:00:00Z
+29 http://www.nytimes.com/2012/09/01/world/africa/change-unlikely-from-angola-election-but-discontent-simmers.html Change Unlikely From Angolan Election, but Discontent Simmers 2012-09-01T00:00:00Z
+30 http://www.nytimes.com/2012/08/20/opinion/dont-fear-all-islamists-fear-salafis.html Don't Fear All Islamists, Fear Salafis 2012-08-19T00:00:00Z
+31 http://query.nytimes.com/gst/fullpage.html?res=9402E7D9103BF934A2575BC0A9649D8B63 U.S. Reliance On Saudi Oil Goes Back Up 2012-08-17T00:00:00Z
+32 http://www.nytimes.com/2012/08/17/business/energy-environment/us-reliance-on-saudi-oil-is-growing-again.html U.S. Reliance On Saudi Oil Goes Back Up 2012-08-16T00:00:00Z
+33 http://www.nytimes.com/2012/08/10/opinion/stories-that-matter-in-rural-africa.html Stories That Matter 2012-08-10T00:00:00Z
+34 http://www.nytimes.com/2012/08/07/opinion/cohen-dream-baby-dream.html Dream, Baby, Dream! 2012-08-07T00:00:00Z
+35 http://www.nytimes.com/2012/07/19/world/middleeast/detentions-of-activists-are-reported-in-uae.html Detentions of Activists Are Reported in U.A.E. 2012-07-19T00:00:00Z
+36 http://www.nytimes.com/2012/07/31/world/europe/after-bombing-bulgarias-ties-with-israel-at-risk.html After Bus Bombing, Bulgaria's Ties With Israel Are at Risk 2012-07-31T00:00:00Z
+37 http://www.nytimes.com/2012/07/30/world/middleeast/panetta-sidesteps-issue-of-israels-plans-on-iran.html Panetta Sidesteps Issue Of Israel's Plans on Iran 2012-07-29T00:00:00Z
+38 http://www.nytimes.com/2012/07/22/opinion/sunday/life-during-wartime-in-syria.html Life During Wartime 2012-07-22T00:00:00Z
+39 http://www.nytimes.com/2012/07/21/world/middleeast/israeli-protester-moshe-silman-dies-after-self-immolation.html Israeli Protester Dies After Self-Immolation 2012-07-21T00:00:00Z
+40 http://www.nytimes.com/2012/07/06/world/africa/sudan-opposition-movement-grows.html Dissent Sprouts in Sudan, but It May Not Be Arab Spring 2012-07-06T00:00:00Z
+41 http://www.nytimes.com/2012/07/21/world/asia/chinese-artist-loses-appeal-in-tax-evasion-case.html Artist Ai Weiwei Loses Appeal Over Tax Evasion Case 2012-07-21T00:00:00Z
+42 http://www.nytimes.com/2012/07/20/opinion/brooks-where-obama-shines.html Where Obama Shines 2012-07-19T00:00:00Z
+43 http://www.nytimes.com/2012/07/11/world/middleeast/11iht-letter11.html Crossing Religious Lines in an Israeli Hospital 2012-07-11T17:45:00Z
+44 http://www.nytimes.com/2012/07/12/business/energy-environment/12iht-green12.html In the Land of Oil, Fears of Excess Use 2012-07-11T00:00:00Z
+45 http://www.nytimes.com/2012/07/14/world/middleeast/commanders-of-syrian-rebels-unite-in-frustration.html Commanders of Syrian Rebels Unite in Frustration 2012-07-13T00:00:00Z
+46 http://www.nytimes.com/2012/07/08/world/africa/libyans-vote-in-first-election-in-more-than-40-years.html Braving Areas of Violence, Voters Try to Reshape Libya 2012-07-08T00:00:00Z
+47 http://www.nytimes.com/2012/07/12/world/middleeast/iraqs-electricity-ministry-puts-katie-couric-on-billboards.html Putting a Megawatt Smile on a Simmering Problem 2012-07-11T00:00:00Z
+48 http://www.nytimes.com/2012/07/07/world/africa/in-sudan-protesters-clash-with-the-riot-police.html Protesters and the Police Clash in Sudan 2012-07-07T00:00:00Z
+49 http://www.nytimes.com/2012/06/29/world/middleeast/bahrain-human-rights-activist-wounded.html Bahrain: Human Rights Activist Wounded 2012-06-29T00:00:00Z
+50 http://query.nytimes.com/gst/fullpage.html?res=9504E6DC173DF93BA35754C0A9649D8B63 Dickens's Sojourns In Switzerland 2012-07-08T00:00:00Z
+51 http://www.nytimes.com/2012/06/30/world/europe/annan-hopeful-over-geneva-talks-on-syria.html Annan &#8216;Optimistic&#8217; Over Geneva Talks on Syria 2012-06-30T00:00:00Z

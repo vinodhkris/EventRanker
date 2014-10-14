@@ -1,0 +1,47 @@
+0 http://www.nytimes.com/2014/10/03/world/asia/hong-kong-protesters-divided-over-use-of-traffic-as-a-weapon.html Hong Kong Protesters Divided Over Use of Traffic as a Weapon 2014-10-03T00:00:00Z
+1 http://www.nytimes.com/2014/10/07/world/asia/hong-kong-protests.html Protest Organizers Claim Progress for Hong Kong  2014-10-07T00:00:00Z
+2 http://www.nytimes.com/2014/10/04/world/asia/regina-ip-china-loyalist-aims-for-compromise-with-hong-kong-protesters.html 3 http://www.nytimes.com/2014/10/03/opinion/soups-on.html 4 http://www.nytimes.com/2014/10/06/opinion/high-stakes-in-hong-kong.html High Stakes in Hong Kong 2014-10-06T12:30:00Z
+5 http://www.nytimes.com/2014/10/09/opinion/hong-kongs-leader-on-the-protests.html Hong Kong&#8217;s Leader, on the Protests 2014-10-09T00:00:00Z
+6 http://www.nytimes.com/2014/09/03/world/asia/hong-kong-newspaper-drops-democracy-advocates-column.html Hong Kong Paper Drops Pro-Democracy Column 2014-09-03T00:00:00Z
+7 http://www.nytimes.com/2014/10/01/opinion/patrick-chappatte-protests-in-hong-kong.html Protests in Hong Kong 2014-10-01T00:00:00Z
+8 http://www.nytimes.com/2014/10/09/world/asia/as-protests-ebb-hong-kong-finds-itself-in-stalemate-over-barricades.html Hong Kong Enters a Standoff Over Barricades as Protests Ebb  2014-10-09T00:00:00Z
+9 http://www.nytimes.com/2014/09/30/opinion/occupy-central-protests-hong-kong-people.html Hong Kong People! 2014-09-30T12:30:00Z
+10 http://www.nytimes.com/2014/10/05/opinion/sunday/a-week-dominated-by-hong-kong-ebola-and-the-secret-service.html A Week Dominated by Hong Kong, Ebola and the Secret Service 2014-10-05T00:00:00Z
+11 http://www.nytimes.com/2014/09/03/opinion/hong-kongs-democracy-dilemma.html 12 http://www.nytimes.com/2014/09/24/world/asia/chinese-president-sends-signal-against-political-change-in-hong-kong.html Chinese President Sends Signal Against Political Change in Hong Kong 2014-09-24T00:00:00Z
+13 http://www.nytimes.com/2014/07/15/opinion/who-will-stand-up-for-hong-kong.html Who Will Stand Up for Hong Kong? 2014-07-15T00:00:00Z
+14 http://www.nytimes.com/aponline/2014/10/02/world/asia/ap-as-hong-kong-protest-app.html Texting Apps Required Gear for Hong Kong Protests 2014-10-02T07:44:00Z
+15 http://www.nytimes.com/aponline/2014/09/29/world/asia/ap-as-hong-kong-democracy-protest-news-guide.html News Guide: Issues, People in Hong Kong Protests 2014-09-29T07:06:36Z
+16 http://www.nytimes.com/2014/07/03/world/asia/uphill-fight-ahead-for-hong-kongs-democracy-movement.html 17 http://www.nytimes.com/aponline/2014/10/07/world/asia/ap-as-hong-kong-democracy-protests.html Hong Kong Protests Thin as Two Sides Agree to Talk 2014-10-07T03:01:04Z
+18 http://www.nytimes.com/reuters/2014/10/03/world/asia/03reuters-hongkong-china-divisions.html For Some Hong Kong Residents, Patience With Protests Wears Thin 2014-10-03T06:50:15Z
+19 http://www.nytimes.com/reuters/2014/09/30/world/asia/30reuters-hongkong-china-mainland.html Divided Chinese Eye Hong Kong Protests With Admiration, Anger 2014-09-30T17:04:20Z
+20 http://www.nytimes.com/reuters/2014/10/06/world/asia/06reuters-hongkong-china.html Hong Kong Democracy Protests Fade, Face Test of Stamina 2014-10-06T05:41:29Z
+21 http://www.nytimes.com/reuters/2014/10/02/business/02reuters-hongkong-china-protesters.html Lack of Leaders May Undermine Hong Kong Protests in 'Long Game' 2014-10-02T08:22:12Z
+22 http://www.nytimes.com/2014/06/30/world/asia/turnout-for-unofficial-vote-in-hong-kong-cheers-democracy-advocates.html Hong Kong Poll Turnout Buoys Democracy Activists 2014-06-30T00:00:00Z
+23 http://www.nytimes.com/reuters/2014/09/27/world/europe/27reuters-hongkong-china.html Goggles at the Ready as Hong Kong Activists Brace for Crackdown 2014-09-27T00:33:57Z
+24 http://www.nytimes.com/aponline/2014/10/01/us/ap-us-hong-kong-democracy-protests-us.html US Student Rallies Support Hong Kong Protesters 2014-10-01T18:42:10Z
+25 http://www.nytimes.com/reuters/2014/10/03/business/03reuters-hongkong-china-secretary.html Hong Kong Warns Sustained Protests Could Cause 'Permanent' Damage to Financial System 2014-10-03T05:17:30Z
+26 http://www.nytimes.com/reuters/2014/10/10/world/asia/10reuters-hongkong-china.html Thousands of Hong Kong Protesters Regroup After Government Rejects Talks 2014-10-10T00:30:21Z
+27 http://www.nytimes.com/reuters/2014/10/09/world/asia/09reuters-hongkong-china-leung.html Pressure Mounts on Hong Kong Leader Over Payout Amid Crisis 2014-10-09T00:26:43Z
+28 http://www.nytimes.com/aponline/2014/08/31/world/asia/ap-as-china-hong-kong.html China: No Open Nominations for Hong Kong Leader 2014-08-31T04:05:06Z
+29 http://www.nytimes.com/aponline/2014/10/07/world/asia/ap-as-hong-kong-murky-characters.html Murky Players Emerge From Within Hong Kong Protest 2014-10-07T11:48:13Z
+30 http://www.nytimes.com/reuters/2014/10/01/business/01reuters-hongkong-china.html Hong Kong Leader Plays Waiting Game, Protesters Demand He Resigns 2014-10-01T00:30:51Z
+31 http://www.nytimes.com/reuters/2014/09/30/world/asia/30reuters-hongkong-china-flashpoint.html Gritty Streets of Mong Kok a Potential Hong Kong Flashpoint 2014-09-30T11:21:08Z
+32 http://www.nytimes.com/reuters/2014/09/30/world/europe/30reuters-hongkong-china-britain.html Britain Tells China: Seek Peace in Hong Kong and Allow Freedoms 2014-09-30T03:06:21Z
+33 http://www.nytimes.com/aponline/2014/10/02/world/asia/ap-as-hong-kong-democracy-protest.html Hong Kong Protesters Set for Talks; Govt HQ Shut 2014-10-02T01:32:02Z
+34 http://www.nytimes.com/reuters/2014/09/29/world/asia/29reuters-hongkong-china-taiwan.html Taiwan Reflects on Fraught Prospects as China Cracks Down in Hong Kong 2014-09-29T05:05:07Z
+35 http://www.nytimes.com/reuters/2014/09/01/world/asia/01reuters-hongkong-china-arrests.html Hong Kong Police Arrest 19 in Pro-Democracy Scuffles 2014-09-01T23:06:56Z
+36 http://www.nytimes.com/reuters/2014/09/03/business/03reuters-china-hongkong-protests.html First Post-97 Chinese Leader, Last Governor Make Pleas for Hong Kong 2014-09-03T02:41:36Z
+37 http://www.nytimes.com/reuters/2014/08/31/world/asia/31reuters-china-hongkong-prodemocracy.html Hong Kong Pro-Democracy Activists Heckle China Official Day After Vote Ruling 2014-08-31T22:59:07Z
+38 http://www.nytimes.com/reuters/2014/08/18/world/asia/18reuters-hongkong-politics.html Thousands Join Anti-Occupy Rally in Hong Kong as Democracy Fight Heats Up 2014-08-18T01:52:42Z
+39 http://www.nytimes.com/reuters/2014/09/30/world/asia/30reuters-hongkong-china-censorship.html HK Protests' 'Umbrella Revolution' Tag Escapes China's Censors-So Far 2014-09-30T02:38:27Z
+40 http://www.nytimes.com/reuters/2014/10/01/world/asia/01reuters-hongkong-china-specialreport.html Special Report: In 'Umbrella Revolution,' China Confronts Limits of Its Power 2014-10-01T15:50:37Z
+41 http://www.nytimes.com/reuters/2014/07/02/world/asia/02reuters-hongkong-protests-police.html Hong Kong Protesters Lifted Kicking and Screaming From Downtown Rally 2014-07-02T01:09:14Z
+42 http://www.nytimes.com/reuters/2014/10/02/world/asia/02reuters-hongkong-china-tiananmenprotesters.html Ex-Tiananmen Leaders Say HK Protesters Biggest Risk Would Be Loss of Public Support 2014-10-02T12:47:07Z
+43 http://www.nytimes.com/reuters/2014/10/01/world/asia/01reuters-hongkong-china-tiananmenprotesters.html Ex-Tiananmen Leaders Say HK Protesters Biggest Risk Would Be Loss of Public Support 2014-10-01T19:21:17Z
+44 http://www.nytimes.com/reuters/2014/10/13/world/asia/13reuters-hongkong-china-germany.html China Says Arrested Assistant for German Paper Working Illegally 2014-10-13T05:25:10Z
+45 http://www.nytimes.com/aponline/2014/09/29/us/ap-financial-markets-us-midday.html US Stocks Slip Following Drops Overseas 2014-09-29T11:52:02Z
+46 http://www.nytimes.com/reuters/2014/10/04/world/europe/04reuters-china-europe.html Chinese Premier to Attend Europe Summit, Sign Russia Rail Deal 2014-10-04T07:05:25Z
+47 http://www.nytimes.com/aponline/2014/09/29/us/ap-financial-markets-us-open.html US Stocks Open Lower, Following Drops Overseas 2014-09-29T09:39:19Z
+48 http://www.nytimes.com/reuters/2014/10/03/world/asia/03reuters-macau-strike.html Macau Dealers Walk Off Job on Friday as Labour Unrest Increases 2014-10-03T02:42:45Z
+49 http://www.nytimes.com/aponline/2014/09/27/world/asia/ap-as-hong-kong-democracy-protest.html HK Activists Start Bigger Protest Amid Standoff 2014-09-27T00:18:45Z
+50 http://www.nytimes.com/reuters/2014/10/10/world/asia/10reuters-germany-china-arrest.html Germany Calls Arrest of News Assistant in China 'Worrying' 2014-10-10T06:51:53Z

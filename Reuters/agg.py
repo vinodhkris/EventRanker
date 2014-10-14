@@ -20,16 +20,16 @@ for doc in listOfDocs:
 
 mindoc = min(docs)
 '''
-K = 10
-docssimilarity = pickle.load(open('docSimilarityPickle.txt', 'rb'))
-articleContent = pickle.load(open('stockmarketarticleContent.txt','rb'))
+print 'Running agg.py'
+print 'Clustering the articles based on features extracted in project_new.py'
+K = 20
+docssimilarity = pickle.load(open('DocSim/hk_docSimilarity.txt', 'rb'))
+articleContent = pickle.load(open('hongKongProtests.txt','rb'))
 numdocs = docssimilarity.shape[0]
 
 clusters = {}
 for i in xrange(numdocs):
 	clusters[i] = [i]
-
-print clusters
 
 def clusterSim(c1,c2):
 	similarities = []
@@ -53,12 +53,11 @@ while len(clusters)>K: 								#Stopping criterion
 
 	clusters_to_merge = max(clusterDistance.iteritems(), key=operator.itemgetter(1))[0] 		#Returns cluster keys that are most similar to each other in this iteration
 	merge(clusters_to_merge) 				#Merges the 2 clusters and deletes the second
-	print len(clusters)
 
 print clusters
 
 for i in clusters:
 	for j in xrange(len(clusters[i])):
-		print i,clusters[i][j],articleContent[clusters[i][j]]['headline'],'\n'
-		print articleContent[clusters[i][j]]['text'],'\n'
+		print i,clusters[i][j],articleContent[clusters[i][j]]['headline'],articleContent[clusters[i][j]]['pub_date']
+		print articleContent[clusters[i][j]]['keywords']
 		raw_input()

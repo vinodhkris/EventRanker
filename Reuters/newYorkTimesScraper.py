@@ -72,12 +72,13 @@ def parse_nyt():
 							else:
 								sent = soup
 							articleContent[i]["text"] = stripper.strip(sent)
+							print articleContent[i]["headline"],article["keywords"],article["lead_paragraph"]
 							i+=1
 							print 'Extracted',i,article["pub_date"]
 							if i>51:
 								break
-			except:
-				print "Skipped"
+		except:
+			print "Skipped"
 		page+=1
 
 	print "Articles Extracted",i	
