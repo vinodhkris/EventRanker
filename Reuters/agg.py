@@ -4,6 +4,8 @@ import operator
 import numpy as np
 import pickle
 import random
+import networkx as nx
+import matplotlib.pyplot as plt
 '''
 topics = open('Topics.txt','r')
 
@@ -55,6 +57,53 @@ while len(clusters)>K: 								#Stopping criterion
 	merge(clusters_to_merge) 				#Merges the 2 clusters and deletes the second
 
 print clusters
+
+def GraphFormation( clusters, clusterDistance ):
+	
+	G=nx.Graph()
+#	print clusters[1][1]
+	for i in clusters:
+	#	print events
+		G.add_node(i)
+	
+	print G.nodes()
+	
+	for i in clusters:
+		for j in clusters:
+			if i!=j:
+				G.add_weighted_edges_from([(i,j,clusterDistance[(i,j)])]) 
+	print G.edges()
+	
+	
+	return G
+	
+	
+G=GraphFormation(clusters,clusterDistance)
+pr =nx.pagerank(G,alpha=0.9,weight='weight')
+print pr
+print sorted(G.degree(weight='weight').values())
+#print G.degree(0)
+pos=nx.spring_layout(G)
+#pylab.figure(2)
+nx.draw(G,pos)
+# specifiy edge labels explicitly
+
+
+edge_labels=dict([((u,v,),d['weight'])
+             for u,v,d in G.edges(data=True)])
+nx.draw_networkx_edge_labels(G,pos,edge_labels=edge_labels)
+'''labels={}
+labels[0]=r'$1$'
+labels[1]=r'$2$'
+labels[2]=r'$3$'
+labels[3]=r'$4$'
+labels[4]=r'$5$'
+nx.draw_networkx_labels(G,pos,labels,font_size=16)
+# show graphs
+'''
+plt.show()
+
+
 
 for i in clusters:
 	for j in xrange(len(clusters[i])):

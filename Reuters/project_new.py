@@ -97,14 +97,14 @@ def similarity(featureVector,doc1,doc2):
 		organization+= len(set(organization1).intersection(organization2))
 
 		date = datetime1 - datetime2
-		date = date.days
+		date = abs(date.days)
 		w_word = 2						#Weight for word vector
 		w_person = 1 						#Weight for person
 		w_location = 2 						#Weight for location
 		w_org = 2						#Weight for organization
-		alpha = 1.0 				#Time decay
+		alpha = 5.0 				#Time decay
 		sim = w_word*cosineSim+w_person*person+w_location*location+w_org*organization
-		return sim*math.exp(-alpha*(date)/50)
+		return sim*alpha*math.exp(-(date)/50)
 	except:
 		return 0.0
 print 'Getting the similarity values between different articles'
