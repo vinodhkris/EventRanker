@@ -1,2 +1,2 @@
-python wc.py
+python tfidf.py
 sh change_weights.sh

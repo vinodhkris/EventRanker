@@ -30,8 +30,19 @@ def unpickle(filename):
 print 'Running project_new.py'
 print 'Extracting word count vector for an article'
 
+filename = open("topicinfo.txt","r")
+name = ''
+timeDiff = 120
+for line in filename:
+	name = line.split(" ")[0]
+	timeDiff = int(line.split(" ")[2])
+	break
 
-articleContent = unpickle('soccerWorldCup.txt')
+articleContent = unpickle(name+'.txt')
+#docs = pickle.load(open('hongKongProtests.txt', 'rb'))
+#docs = pickle.load(open('stockMarket.txt', 'rb'))
+#articleContent = pickle.load(open('arabSpring.txt', 'rb'))
+
 
 #wc
 
@@ -40,8 +51,20 @@ articleContent = unpickle('soccerWorldCup.txt')
 
 #tfidf
 
-featureVector = unpickle('tfidf_output/soccerWorldCup_tfidf.txt')
+#featureVector = unpickle('tfidf_output/soccerWorldCup_tfidf.txt')
+#featureVector.todense()
+
+featureVector = unpickle('tfidf_output/'+name+'_tfidf.txt')
 featureVector.todense()
+
+#featureVector = unpickle('tfidf_output/soccerWorldCup_tfidf.txt')
+#featureVector.todense()
+
+#featureVector = unpickle('tfidf_output/soccerWorldCup_tfidf.txt')
+#featureVector.todense()
+
+#featureVector = unpickle('tfidf_output/soccerWorldCup_tfidf.txt')
+#featureVector.todense()
 
 
 #Feature Vector extracted - Lets write the similarity formula
@@ -106,11 +129,11 @@ def similarity(featureVector,doc1,doc2):
 
 		date = datetime1 - datetime2
 		date = abs(date.days)
-		w_word = 100						#Weight for word vector
-		w_person = 700 						#Weight for person
-		w_location =2.5						#Weight for location
-		w_org = 16						#Weight for organization
-		alpha = 4.0				#Time decay
+		w_word = 1#100						#Weight for word vector
+		w_person = 1#100 						#Weight for person
+		w_location =1#2.5						#Weight for location
+		w_org = 1#16						#Weight for organization
+		alpha = 1.0#4.0				#Time decay
 		sim = w_word*cosineSim+w_person*person+w_location*location+w_org*organization
 		return sim*alpha*math.exp(-(date)/30)
 	except:
@@ -125,7 +148,11 @@ for i in xrange(numdocs-1):
 			continue
 		docssimilarity[i][j] = similarity(featureVector,i,j)
 
-writePickle(docssimilarity,'DocSim/swc_docSimilarity.txt')
+#writePickle(docssimilarity,'DocSim/swc_docSimilarity.txt')
+writePickle(docssimilarity,'DocSim/'+name+'_docSimilarity.txt')
+#writePickle(docssimilarity,'DocSim/swc_docSimilarity.txt')
+#writePickle(docssimilarity,'DocSim/swc_docSimilarity.txt')
+#writePickle(docssimilarity,'DocSim/swc_docSimilarity.txt')
 
 print docssimilarity
 

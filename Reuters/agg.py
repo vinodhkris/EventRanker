@@ -7,6 +7,7 @@ import random
 import networkx as nx
 import matplotlib.pyplot as plt
 import stripper
+
 '''
 topics = open('Topics.txt','r')
 
@@ -31,8 +32,21 @@ def writePickle(struct, filename):
 print 'Running agg.py'
 print 'Clustering the articles based on features extracted in project_new.py'
 K = 10
-docssimilarity = pickle.load(open('DocSim/swc_docSimilarity.txt', 'rb'))
-articleContent = pickle.load(open('soccerWorldCup.txt','rb'))
+filename = open("topicinfo.txt","r")
+name = ''
+for line in filename:
+	name = line.split(" ")[0]
+	K = int(line.split(" ")[1])
+	break
+
+#docssimilarity = pickle.load(open('DocSim/swc_docSimilarity.txt', 'rb'))
+docssimilarity = pickle.load(open('DocSim/'+name+'_docSimilarity.txt', 'rb'))
+#docssimilarity = pickle.load(open('DocSim/swc_docSimilarity.txt', 'rb'))
+#docssimilarity = pickle.load(open('DocSim/swc_docSimilarity.txt', 'rb'))
+#docssimilarity = pickle.load(open('DocSim/swc_docSimilarity.txt', 'rb'))
+
+articleContent = pickle.load(open(name+'.txt','rb'))
+
 numdocs = docssimilarity.shape[0]
 
 clusters = {}
@@ -64,6 +78,8 @@ while len(clusters)>K: 								#Stopping criterion
 
 print clusters
 
+
+#Top events - Graph construction
 def GraphFormation( clusters, clusterDistance ):
 	
 	G=nx.Graph()
@@ -72,43 +88,34 @@ def GraphFormation( clusters, clusterDistance ):
 	#	print events
 		G.add_node(i)
 	
-	print G.nodes()
+	#print G.nodes()
 	
 	for i in clusters:
 		for j in clusters:
 			if i!=j:
 				G.add_weighted_edges_from([(i,j,clusterDistance[(i,j)])]) 
-	print G.edges()
+	#print G.edges()
 	
 	
 	return G
 	
-	
 G=GraphFormation(clusters,clusterDistance)
 pr =nx.pagerank(G,alpha=0.9,weight='weight')
-print pr
-print sorted(G.degree(weight='weight').values())
+pr = sorted(pr.items(), key=operator.itemgetter(1),reverse=True)
+degree = sorted(G.degree(weight='weight').items(),key=operator.itemgetter(1),reverse=True)	
+
 #print G.degree(0)
 pos=nx.spring_layout(G)
 #pylab.figure(2)
 nx.draw(G,pos)
 # specifiy edge labels explicitly
-
-
 edge_labels=dict([((u,v,),d['weight'])
              for u,v,d in G.edges(data=True)])
 nx.draw_networkx_edge_labels(G,pos,edge_labels=edge_labels)
-'''labels={}
-labels[0]=r'$1$'
-labels[1]=r'$2$'
-labels[2]=r'$3$'
-labels[3]=r'$4$'
-labels[4]=r'$5$'
-nx.draw_networkx_labels(G,pos,labels,font_size=16)
-# show graphs
-'''
 #plt.show()
 
+
+#Printing cluster info
 new_cluster = {}
 num = 0
 for word in clusters:
@@ -125,19 +132,20 @@ for i in clusters:
 	personCount[i] = defaultdict(int)
 	orgCount[i] = defaultdict(int)
 	locCount[i] = defaultdict(int)
-
+	print '\nCluster',i
 	for j in xrange(len(clusters[i])):
-		print i,clusters[i][j],articleContent[clusters[i][j]]['headline'],articleContent[clusters[i][j]]['pub_date']
-		print articleContent[clusters[i][j]]['keywords']
+	#	print i,clusters[i][j],articleContent[clusters[i][j]]['headline'],articleContent[clusters[i][j]]['pub_date']
+	#	print articleContent[clusters[i][j]]['keywords']
 
 		headline = articleContent[clusters[i][j]]['headline']
 		if articleContent[clusters[i][j]]["lead_paragraph"] is not None:
-			print 'here'
+		#	print 'here'
 			headline = headline + ' ' +articleContent[clusters[i][j]]["lead_paragraph"]
 		headline = stripper.strip(headline)
+	#	print headline
 		for word in headline.split(' '):
 			wordCount[i][word]+=1
-
+	#	print wordCount[i]
 		keywords = articleContent[clusters[i][j]]['keywords']
 
 		for x in xrange(len(keywords)):
@@ -150,10 +158,11 @@ for i in clusters:
 
 
 for i in clusters:
-	sorted_x = sorted(wordCount[i].items(), key=operator.itemgetter(1))
-	sorted_person =  sorted(personCount[i].items(), key=operator.itemgetter(1))
-	sortedLocation =  sorted(locCount[i].items(), key=operator.itemgetter(1))
-	sortedOrg =  sorted(orgCount[i].items(), key=operator.itemgetter(1))
+	sorted_x = sorted(wordCount[i].items(), key=operator.itemgetter(1),reverse=True)
+	sorted_person =  sorted(personCount[i].items(), key=operator.itemgetter(1),reverse=True)
+	sortedLocation =  sorted(locCount[i].items(), key=operator.itemgetter(1),reverse=True)
+	sortedOrg =  sorted(orgCount[i].items(), key=operator.itemgetter(1),reverse=True)
+	'''
 	print '\nCluster',i,'labels'
 	for j in xrange(5):
 		if j <len(sorted_x):
@@ -173,4 +182,31 @@ for i in clusters:
 	for j in xrange(3):
 		if j <len(sortedOrg):
 			print sortedOrg[j]
+	'''
+#print new_cluster
 
+print 'Top 5 events according to Page rank'
+for i in xrange(5):
+	print i,pr[i]
+print '\nTop 5 events according to degree'
+for i in xrange(5):
+	print i,degree[i],'\n'
+	for j in xrange(len(clusters[degree[i][0]])):
+		print articleContent[clusters[degree[i][0]][j]]['headline']
+	print '\n'
+	print 'Top 3 persons'
+	for j in xrange(3):
+		if j <len(sorted_person):
+			print sorted_person[j]
+
+	print 'Top 3 locs'
+	for j in xrange(3):
+		if j <len(sortedLocation):
+			print sortedLocation[j]
+
+	print 'Top 3 orgs'
+	for j in xrange(3):
+		if j <len(sortedOrg):
+			print sortedOrg[j]
+
+	print '\n\n'
