@@ -6,6 +6,7 @@ import pickle
 import random
 import networkx as nx
 import matplotlib.pyplot as plt
+import stripper
 '''
 topics = open('Topics.txt','r')
 
@@ -22,11 +23,16 @@ for doc in listOfDocs:
 
 mindoc = min(docs)
 '''
+def writePickle(struct, filename):
+	file1 = open(filename,"wb") 			
+	pickle.dump(struct,file1)
+	file1.close()
+
 print 'Running agg.py'
 print 'Clustering the articles based on features extracted in project_new.py'
-K = 20
-docssimilarity = pickle.load(open('DocSim/hk_docSimilarity.txt', 'rb'))
-articleContent = pickle.load(open('hongKongProtests.txt','rb'))
+K = 10
+docssimilarity = pickle.load(open('DocSim/swc_docSimilarity.txt', 'rb'))
+articleContent = pickle.load(open('soccerWorldCup.txt','rb'))
 numdocs = docssimilarity.shape[0]
 
 clusters = {}
@@ -101,12 +107,70 @@ labels[4]=r'$5$'
 nx.draw_networkx_labels(G,pos,labels,font_size=16)
 # show graphs
 '''
-plt.show()
+#plt.show()
 
+new_cluster = {}
+num = 0
+for word in clusters:
+	new_cluster[num] = clusters[word]
+	num+=1
+writePickle(new_cluster,'new_cluster.txt')
 
-
+wordCount = {}
+orgCount = {}
+personCount = {}
+locCount = {}
 for i in clusters:
+	wordCount[i] = defaultdict(int)
+	personCount[i] = defaultdict(int)
+	orgCount[i] = defaultdict(int)
+	locCount[i] = defaultdict(int)
+
 	for j in xrange(len(clusters[i])):
 		print i,clusters[i][j],articleContent[clusters[i][j]]['headline'],articleContent[clusters[i][j]]['pub_date']
 		print articleContent[clusters[i][j]]['keywords']
-		raw_input()
+
+		headline = articleContent[clusters[i][j]]['headline']
+		if articleContent[clusters[i][j]]["lead_paragraph"] is not None:
+			print 'here'
+			headline = headline + ' ' +articleContent[clusters[i][j]]["lead_paragraph"]
+		headline = stripper.strip(headline)
+		for word in headline.split(' '):
+			wordCount[i][word]+=1
+
+		keywords = articleContent[clusters[i][j]]['keywords']
+
+		for x in xrange(len(keywords)):
+			if keywords[x]["name"] == "persons":
+				personCount[i][keywords[x]["value"]]+=1
+			if keywords[x]["name"] == "glocations":
+				locCount[i][keywords[x]["value"]]+=1
+			if keywords[x]["name"] == "organizations":
+				orgCount[i][keywords[x]["value"]]+=1
+
+
+for i in clusters:
+	sorted_x = sorted(wordCount[i].items(), key=operator.itemgetter(1))
+	sorted_person =  sorted(personCount[i].items(), key=operator.itemgetter(1))
+	sortedLocation =  sorted(locCount[i].items(), key=operator.itemgetter(1))
+	sortedOrg =  sorted(orgCount[i].items(), key=operator.itemgetter(1))
+	print '\nCluster',i,'labels'
+	for j in xrange(5):
+		if j <len(sorted_x):
+			print sorted_x[j]
+
+	print 'Top 3 persons'
+	for j in xrange(3):
+		if j <len(sorted_person):
+			print sorted_person[j]
+
+	print 'Top 3 locs'
+	for j in xrange(3):
+		if j <len(sortedLocation):
+			print sortedLocation[j]
+
+	print 'Top 3 orgs'
+	for j in xrange(3):
+		if j <len(sortedOrg):
+			print sortedOrg[j]
+

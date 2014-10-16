@@ -45,7 +45,7 @@ print 'Computing tfidf vector for unigrams and bigrams'
 tokenizer = RegexpTokenizer(r'\w+')
 
 # docs = pickle.load(open('googlearticleContent.txt', 'rb'))
-docs = pickle.load(open('hongKongProtests.txt', 'rb'))
+docs = pickle.load(open('soccerWorldCup.txt', 'rb'))
 # docs = pickle.load(open('hongKongProtests.txt', 'rb'))
 #docs = pickle.load(open('soccerWorldCup.txt', 'rb'))
 # docs = pickle.load(open('arabSpring.txt', 'rb'))
@@ -96,7 +96,7 @@ for doc in docs:
 			wc_mat[index][doccount] = list_of_dics[doccount][word]
 	doccount += 1
 '''
-writePickle(wc_mat,"tfidf_output/hongKongProtests_tfidf.txt")
+writePickle(wc_mat,"tfidf_output/soccerWorldCup_tfidf.txt")
 
 
 

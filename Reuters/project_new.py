@@ -30,10 +30,18 @@ def unpickle(filename):
 print 'Running project_new.py'
 print 'Extracting word count vector for an article'
 
-featureVector = unpickle('WC_output/hongKongProtests_wc.txt')
-articleContent = unpickle('hongKongProtests.txt')
 
-featureVector = np.transpose(featureVector)#featureVector.todense()
+articleContent = unpickle('soccerWorldCup.txt')
+
+#wc
+
+#featureVector = unpickle('WC_output/soccerWorldCup_wc.txt')
+#featureVector = np.transpose(featureVector)
+
+#tfidf
+
+featureVector = unpickle('tfidf_output/soccerWorldCup_tfidf.txt')
+featureVector.todense()
 
 
 #Feature Vector extracted - Lets write the similarity formula
@@ -98,13 +106,13 @@ def similarity(featureVector,doc1,doc2):
 
 		date = datetime1 - datetime2
 		date = abs(date.days)
-		w_word = 2						#Weight for word vector
-		w_person = 1 						#Weight for person
-		w_location = 2 						#Weight for location
-		w_org = 2						#Weight for organization
-		alpha = 5.0 				#Time decay
+		w_word = 100						#Weight for word vector
+		w_person = 700 						#Weight for person
+		w_location =2.5						#Weight for location
+		w_org = 16						#Weight for organization
+		alpha = 4.0				#Time decay
 		sim = w_word*cosineSim+w_person*person+w_location*location+w_org*organization
-		return sim*alpha*math.exp(-(date)/50)
+		return sim*alpha*math.exp(-(date)/30)
 	except:
 		return 0.0
 print 'Getting the similarity values between different articles'
@@ -117,7 +125,7 @@ for i in xrange(numdocs-1):
 			continue
 		docssimilarity[i][j] = similarity(featureVector,i,j)
 
-writePickle(docssimilarity,'DocSim/hk_docSimilarity.txt')
+writePickle(docssimilarity,'DocSim/swc_docSimilarity.txt')
 
 print docssimilarity
 

@@ -45,7 +45,7 @@ print 'Computing word count vector for unigrams and bigrams'
 tokenizer = RegexpTokenizer(r'\w+')
 
 # docs = pickle.load(open('googlearticleContent.txt', 'rb'))
-docs = pickle.load(open('hongKongProtests.txt', 'rb'))
+docs = pickle.load(open('soccerWorldCup.txt', 'rb'))
 # docs = pickle.load(open('hongKongProtests.txt', 'rb'))
 #docs = pickle.load(open('soccerWorldCup.txt', 'rb'))
 # docs = pickle.load(open('arabSpring.txt', 'rb'))
@@ -94,7 +94,7 @@ for doc in docs:
 			wc_mat[index][doccount] = list_of_dics[doccount][word]
 	doccount += 1
 
-writePickle(wc_mat,"WC_output/hongKongProtests_wc.txt")
+writePickle(wc_mat,"WC_output/soccerWorldCup_wc.txt")
 
 
 

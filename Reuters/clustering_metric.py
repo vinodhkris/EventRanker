@@ -1,9 +1,15 @@
 import random
-
+import pickle
 # annotation for world cup
+def unpickle(filename):
+    f = open(filename,"rb") 
+    heroes = pickle.load(f)
+    return heroes
+
 annotated_clusters = {0: [6,20,21,22,25,30,31,36,37,38,39,42,43,46,48,49,50], 1: [27,40,41], 2: [17,18,24,32], 3: [0,5,9,10,13,19], 4: [1,2,7,8,11,12,15,47], 5: [4,35], 6: [14], 7: [16], 8: [23,26,34], 9: [28,44], 10: [29,33,45]}
 
-result_clusters = {0: [4, 35], 1: [10, 6, 32, 18, 17, 24, 2, 7, 11, 0, 13, 19, 1, 23, 26, 9, 34, 38, 40, 41, 45, 44, 47, 3, 5], 2: [12], 3: [14, 8], 4: [16], 5: [20, 22, 36, 48, 42, 46, 39, 30, 31, 21], 6: [25, 49, 27], 7: [28, 15], 8: [33, 29], 9: [43, 37], 10: [50]}
+#result_clusters = {0: [4, 35], 1: [10, 6, 32, 18, 17, 24, 2, 7, 11, 0, 13, 19, 1, 23, 26, 9, 34, 38, 40, 41, 45, 44, 47, 3, 5], 2: [12], 3: [14, 8], 4: [16], 5: [20, 22, 36, 48, 42, 46, 39, 30, 31, 21], 6: [25, 49, 27], 7: [28, 15], 8: [33, 29], 9: [43, 37], 10: [50]}
+result_clusters = unpickle('new_cluster.txt')
 
 # calculate cluster precision
 # randomly sample pairs of articles from result_clusters and see if they are in the same annotated_clusters
